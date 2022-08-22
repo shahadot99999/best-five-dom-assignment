@@ -1,3 +1,18 @@
+//button deselected
+var button1 = document.getElementById("button1");
+var button2 = document.getElementById("button2");
+
+[button1].map(b => b.addEventListener('click', function () {
+    button1.disabled = true;
+
+}));
+
+[button2].map(b => b.addEventListener('click', function () {
+
+    button2.disabled = true;
+
+}));
+
 //all data store in array
 const cart = [];
 // player-cart

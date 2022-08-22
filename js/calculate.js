@@ -51,3 +51,24 @@ document.getElementById('calculate-button').addEventListener('click', function (
         totallExpenseText.innerText = totallcost
     })
 })
+
+document.getElementById('calculate-totall-button').addEventListener('click', function () {
+    //manager input field
+    const managerInputField = document.getElementById('manager-salary')
+    const managerInputFieldString = managerInputField.value;
+    const manager = parseFloat(managerInputFieldString);
+
+    //coach inputfield
+    const coachInputField = document.getElementById('coach-salary')
+    const coachInputFieldString = coachInputField.value;
+    const coach = parseFloat(coachInputFieldString);
+
+    // totall expense cost value 
+    const totallExpenseText = document.getElementById('totall-cost');
+    const totallExpenseString = totallExpenseText.innerText;
+    const totallExpense = parseFloat(totallExpenseString);
+
+    //calculate result
+    const totallcost = playerCost + manager + coach + totallExpense;
+    totallExpenseText.innerText = totallcost
+})

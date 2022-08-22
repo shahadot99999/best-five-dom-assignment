@@ -11,7 +11,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body>
+<body class="bg-orange-500">
     <!-- header part  -->
     <header class="bg-orange-500">
         <div class="carousel w-full">
@@ -162,7 +162,95 @@
                 </div>
                 <!-- player card end -->
 
-                <div></div>
+                <div>
+                    <!-- Select Player -->
+                    <div class="card bg-fuchsia-900 w-full bg-base-100 shadow-xl">
+                        <div class="card-body items-center text-center">
+                            <p class="text-4xl text-center">Top Select Five Player
+                            <div style="display:none;">
+                                <span id="player-number" class="text-blue-500">
+                                    0
+                                </span>
+                            </div>
+                            </p>
+
+                            <!-- table -->
+                            <div class="overflow-x-auto">
+                                <table class="table table-zebra w-full">
+                                    <!-- head -->
+                                    <thead>
+                                        <tr>
+                                            <th id="player-number"></th>
+                                            <th>Player Name</th>
+                                        </tr>
+                                    </thead>
+                                    <!-- Table body Part  -->
+                                    <tbody id="player-cart">
+                                        <!-- <tr>
+                                    <th>1</th>
+                                    <td>Cy Ganderton</td>
+                                    <td>Quality Control Specialist</td>
+                                  </tr> -->
+                                    </tbody>
+                                </table>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Budget -->
+                    <div class="card bg-purple-300 w-full bg-base-100 shadow-xl mt-4">
+
+                        <div class="card-body items-center text-center">
+                            <h2 class="card-title">Budget</h2>
+                            <!-- per Player  -->
+                            <div class="p-4 rounded-xl">
+                                <h4 class="text-sm">Per Player: </h4>
+                                <input id="per-player" class="w-9/12 block mb-2 px-3 border-2 border-rose-600"
+                                    type="text" name="" placeholder="$ Per-player">
+                            </div>
+
+
+                            <!-- Calculate button handler  -->
+                            <button id="calculate-button"
+                                class="bg-amber-600 hover:bg-sky-700 px-8 py-2 text-white font-medium rounded-lg">Calculate</button>
+
+                            <!-- Player Expense -->
+                            <div class="p-4 rounded-xl">
+                                <h4 class="text-sm">Player Expense Cost: </h4>
+                                <h2 class="text-sm border-2 border-rose-600">$<span id="player-expense">00</span></h2>
+                            </div>
+
+                            <!-- Manager Salary -->
+                            <div class="p-4 rounded-xl">
+                                <h4 class="text-sm">Player Expense Cost: </h4>
+                                <input id="manager-salary" class="w-9/12 block mb-2 px-3 border-2 border-rose-600"
+                                    type="text" name="" placeholder="$ manager-salary">
+                            </div>
+
+                            <!-- Coach Salary -->
+                            <div class="p-4 rounded-xl">
+                                <h4 class="text-sm">Player Expense Cost: </h4>
+                                <input id="coach-salary" class="w-9/12 block mb-2 px-3 border-2 border-rose-600"
+                                    type="text" name="" placeholder="$ coach-salary">
+                            </div>
+
+                            <!-- Calculate totall button handler  -->
+                            <button id="calculate-totall-button"
+                                class="bg-amber-600 hover:bg-sky-700 px-8 py-2 text-white font-medium rounded-lg">Calculate
+                                Totall </button>
+
+
+                            <!-- Player Expense -->
+                            <div class="p-4 rounded-xl">
+                                <h4 class="text-sm ">Totall Cost: </h4>
+                                <h2 class="text-sm border-2 border-rose-600">$<span id="totall-cost">00</span></h2>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+        </section>
     </main>
 
 
